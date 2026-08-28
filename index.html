@@ -12,9 +12,9 @@
         }
         
         :root {
-            --primary: #2c3e50;
-            --accent: #3498db;
-            --text: #2c3e50;
+            --primary: #1a1a1a;
+            --accent: #0066cc;
+            --text: #333;
             --light-gray: #f8f9fa;
             --border: #e0e0e0;
         }
@@ -25,28 +25,28 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: var(--text);
             background: #ffffff;
         }
         
         nav {
             background: #ffffff;
-            padding: 1.5rem 0;
+            padding: 1.2rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
             border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 3rem;
-            max-width: 1200px;
+            gap: 2.5rem;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -56,7 +56,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         
         nav a:hover {
@@ -64,22 +64,24 @@
         }
         
         section {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 120px 40px 80px;
-            max-width: 1200px;
+            padding: 80px 40px;
+            max-width: 1100px;
             margin: 0 auto;
         }
         
         .hero {
+            min-height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             background: #ffffff;
+            padding-top: 120px;
         }
         
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 0.5rem;
             color: var(--primary);
             font-weight: 700;
@@ -87,75 +89,51 @@
         
         .hero .title {
             color: var(--accent);
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
             font-weight: 500;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            color: #555;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .btn {
-            background: var(--accent);
-            color: white;
-            padding: 14px 40px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-        
-        .btn:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         
         h2 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
             color: var(--primary);
             font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             border-bottom: 3px solid var(--accent);
-            padding-bottom: 0.5rem;
             display: inline-block;
+            padding-bottom: 0.3rem;
         }
         
         .section-subtitle {
             color: #666;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
             margin-top: 0.5rem;
         }
         
         #about {
             background: var(--light-gray);
+            padding-top: 100px;
         }
         
-        .about-content {
+        .about-header {
             display: flex;
-            gap: 4rem;
+            gap: 3rem;
+            margin-bottom: 3rem;
             align-items: center;
-            margin-top: 2rem;
         }
         
         .about-img {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            border-radius: 8px;
             overflow: hidden;
             flex-shrink: 0;
-            border: 5px solid #ffffff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 3px solid #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         
         .about-img img {
@@ -164,175 +142,248 @@
             object-fit: cover;
         }
         
-        .about-text {
+        .about-title {
             flex: 1;
         }
         
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+        .about-title h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
             color: var(--primary);
+            font-weight: 700;
         }
         
-        .about-text p {
+        .about-title .role {
+            font-size: 1.3rem;
+            color: var(--accent);
+            font-weight: 600;
             margin-bottom: 1rem;
+        }
+        
+        .career-statement {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             line-height: 1.8;
             color: #555;
+            font-size: 0.98rem;
+            margin-bottom: 2rem;
         }
         
         .expertise {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
-            margin-top: 1.5rem;
         }
         
         .expertise-item {
             background: #ffffff;
-            padding: 1rem 1.5rem;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .experience-list {
+            margin-top: 2rem;
+        }
+        
+        .experience-item {
+            background: #ffffff;
+            padding: 2rem;
             border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             border-left: 4px solid var(--accent);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .experience-header h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .experience-meta {
+            text-align: right;
+        }
+        
+        .experience-company {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .experience-location {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .experience-date {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .experience-item ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        
+        .experience-item li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .experience-item li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
         }
         
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2.5rem;
+            gap: 1.8rem;
             margin-top: 2rem;
         }
         
         .project-card {
             background: #ffffff;
-            border-radius: 8px;
-            padding: 2.5rem;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            border-left: 5px solid var(--accent);
+            border-radius: 6px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--accent);
             transition: all 0.3s;
         }
         
         .project-card:hover {
-            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
-            transform: translateY(-4px);
-        }
-        
-        .project-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .project-icon {
-            font-size: 2.5rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
         }
         
         .project-card h3 {
             color: var(--primary);
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 600;
+            margin-bottom: 0.8rem;
         }
         
         .project-card p {
             color: #555;
             line-height: 1.8;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
         }
         
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.6rem;
+            gap: 0.5rem;
         }
         
         .tech-tag {
             background: var(--light-gray);
             color: var(--text);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
             border: 1px solid var(--border);
+            font-weight: 500;
         }
         
         #skills {
             background: var(--light-gray);
         }
         
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 2rem;
-        }
-        
-        .skill-category {
             background: #ffffff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-radius: 6px;
+            overflow: hidden;
         }
         
-        .skill-category h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .skills-table th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 1.5rem;
+            text-align: left;
             font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
-        .skill-category ul {
-            list-style: none;
-        }
-        
-        .skill-category li {
-            padding: 0.7rem 0;
-            color: #555;
+        .skills-table td {
+            padding: 1.2rem 1.5rem;
             border-bottom: 1px solid var(--border);
+            color: #555;
+            font-size: 0.92rem;
+            vertical-align: top;
         }
         
-        .skill-category li:last-child {
+        .skills-table tr:last-child td {
             border-bottom: none;
         }
         
-        .skill-category li::before {
-            content: '• ';
-            color: var(--accent);
-            font-weight: bold;
-            margin-right: 0.5rem;
+        .skills-table tr:hover {
+            background: #fafafa;
+        }
+        
+        .skills-table .category {
+            font-weight: 600;
+            color: var(--primary);
+            width: 25%;
         }
         
         .contact-info {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            gap: 1.5rem;
             margin-top: 2rem;
         }
         
         .contact-item {
             background: #ffffff;
-            padding: 2.5rem 2rem;
-            border-radius: 8px;
+            padding: 2rem;
+            border-radius: 6px;
             text-align: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             transition: all 0.3s;
+            border-top: 3px solid var(--accent);
         }
         
         .contact-item:hover {
-            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-            transform: translateY(-4px);
-        }
-        
-        .contact-item-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
         }
         
         .contact-item h3 {
             color: var(--primary);
             margin-bottom: 0.8rem;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
         
@@ -340,10 +391,11 @@
             color: var(--accent);
             text-decoration: none;
             transition: color 0.3s;
+            font-size: 0.95rem;
         }
         
         .contact-item a:hover {
-            color: #2980b9;
+            color: #0052a3;
             text-decoration: underline;
         }
         
@@ -351,8 +403,9 @@
             background: var(--light-gray);
             color: var(--text);
             text-align: center;
-            padding: 2.5rem 2rem;
+            padding: 2rem;
             border-top: 1px solid var(--border);
+            font-size: 0.9rem;
         }
         
         footer p {
@@ -361,44 +414,63 @@
         }
         
         @media (max-width: 1024px) {
-            .skills-container {
-                grid-template-columns: 1fr;
+            .expertise {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             h2 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
             
-            .about-content {
+            .about-header {
                 flex-direction: column;
                 text-align: center;
             }
             
             .about-img {
-                width: 220px;
-                height: 220px;
+                width: 180px;
+                height: 180px;
+            }
+            
+            .about-title h1 {
+                font-size: 2rem;
             }
             
             .expertise {
                 grid-template-columns: 1fr;
             }
             
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .experience-meta {
+                text-align: left;
+            }
+            
             .contact-info {
                 grid-template-columns: 1fr;
             }
             
+            .skills-table th,
+            .skills-table td {
+                padding: 0.8rem 1rem;
+                font-size: 0.85rem;
+            }
+            
             nav ul {
-                gap: 1.5rem;
+                gap: 1.2rem;
+                font-size: 0.85rem;
             }
             
             section {
-                padding: 100px 20px 60px;
+                padding: 60px 20px;
             }
         }
     </style>
@@ -406,175 +478,175 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="title">Automotive Engineer</div>
+    <section class="hero">
         <h1>Kijin Baek</h1>
-        <p>Specializing in ADAS, autonomous driving systems, and edge AI for next-generation vehicle technologies</p>
-        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
+        <div class="title">Automotive Engineer</div>
     </section>
 
     <section id="about">
-        <div>
-            <h2>About Me</h2>
-            <p class="section-subtitle">Innovation. Edge AI. Autonomous Systems.</p>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="profile.jpg" alt="Kijin Baek">
-                </div>
-                <div class="about-text">
-                    <h3>Automotive Engineer</h3>
-                    <p>Passionate automotive engineer with hands-on experience in developing ADAS systems, edge AI solutions, and autonomous driving technologies. Specialized in deploying vision-based AI models on embedded systems for real-time safety applications.</p>
-                    <p>Strong expertise in vehicle control systems, sensor fusion, simulation platforms, and Euro NCAP standards with a focus on creating practical and efficient solutions for intelligent mobility.</p>
-                    <div class="expertise">
-                        <div class="expertise-item">🤖 Edge AI & Computer Vision</div>
-                        <div class="expertise-item">🚗 ADAS & Vehicle Control</div>
-                        <div class="expertise-item">📊 Simulation & Validation</div>
-                        <div class="expertise-item">🔧 Embedded Systems</div>
+        <div class="about-header">
+            <div class="about-img">
+                <img src="profile.jpg" alt="Kijin Baek">
+            </div>
+            <div class="about-title">
+                <h1>About Me</h1>
+                <div class="role">Automotive Engineer</div>
+            </div>
+        </div>
+        
+        <h2>Career Statement</h2>
+        <div class="career-statement">
+            Automotive engineer with experience in Software-Defined Vehicles (SDV), embedded systems, and driver monitoring systems. Developed embedded applications integrating Raspberry Pi, CAN communication, Python, C++, and Qt/QML for real-time vehicle data acquisition, processing, and HMI visualization. Built perception and driver state monitoring pipelines using computer vision and prototyped SDV applications with CARLA, Zenoh, Kuksa, and VSS during the official Eclipse SDV Hackathon. Completed an R&D internship at AUMOVIO, contributing to automotive requirement engineering through customer requirement management, engineering specification and revision control, and requirement traceability using enterprise engineering tools. Also completed SEA:ME @ 42 Wolfsburg, a Volkswagen Group mobility software program, collaborating with international teams to develop next-generation mobility software.
+        </div>
+        
+        <div class="expertise">
+            <div class="expertise-item">Edge AI & Computer Vision</div>
+            <div class="expertise-item">ADAS & Vehicle Control</div>
+            <div class="expertise-item">Embedded Systems</div>
+            <div class="expertise-item">Software-Defined Vehicles</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p class="section-subtitle">Professional Background</p>
+        
+        <div class="experience-list">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Requirements Management Intern</h3>
+                        <div class="experience-company">Aumovio Electronics</div>
+                        <div class="experience-location">Sejong, South Korea</div>
+                    </div>
+                    <div class="experience-meta">
+                        <div class="experience-date">June 2026 - June 2027</div>
                     </div>
                 </div>
+                <ul>
+                    <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and RTM</li>
+                    <li>Tracked end-to-end status and coordinated stakeholders from scoping to release</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <div>
-            <h2>Projects</h2>
-            <p class="section-subtitle">Key Engineering Achievements</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">👁️</span>
-                        <h3>Driver Monitoring System (DMS)</h3>
-                    </div>
-                    <p>Developed real-time edge AI driver monitoring system on NVIDIA Jetson Orin Nano. Deployed SmolVLM-500M for offline inference to detect drowsiness, phone usage, and loss of consciousness with multimodal AI processing on embedded hardware.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">NVIDIA Jetson Orin Nano</span>
-                        <span class="tech-tag">SmolVLM-500M</span>
-                        <span class="tech-tag">MediaPipe</span>
-                        <span class="tech-tag">YOLO</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
+        <h2>Projects</h2>
+        <p class="section-subtitle">Key Engineering Achievements</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Driver Monitoring System (DMS)</h3>
+                <p>Developed real-time edge AI driver monitoring system on NVIDIA Jetson Orin Nano. Deployed SmolVLM-500M for offline inference to detect drowsiness, phone usage, and loss of consciousness with multimodal AI processing on embedded hardware.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">NVIDIA Jetson Orin Nano</span>
+                    <span class="tech-tag">SmolVLM-500M</span>
+                    <span class="tech-tag">MediaPipe</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">Python</span>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">🛣️</span>
-                        <h3>Road Surface Condition Estimation</h3>
-                    </div>
-                    <p>Built camera-based road surface estimation system for autonomous vehicles during hackathon. Utilized CARLA simulator and Eclipse KUKSA/Zenoh framework for vehicle data integration and real-time road condition classification.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">CARLA</span>
-                        <span class="tech-tag">Eclipse KUKSA</span>
-                        <span class="tech-tag">Zenoh</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
+            <div class="project-card">
+                <h3>Road Surface Condition Estimation</h3>
+                <p>Built camera-based road surface estimation system for autonomous vehicles during hackathon. Utilized CARLA simulator and Eclipse KUKSA/Zenoh framework for vehicle data integration and real-time road condition classification.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">CARLA</span>
+                    <span class="tech-tag">Eclipse KUKSA</span>
+                    <span class="tech-tag">Zenoh</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Python</span>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">🚦</span>
-                        <h3>ACC Controller Design & Validation</h3>
-                    </div>
-                    <p>Designed and validated Euro NCAP-compliant Adaptive Cruise Control (ACC) controller for capstone project. Developed control logic in MATLAB/Simulink and performed comprehensive validation testing in IPG CarMaker simulation environment.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">MATLAB/Simulink</span>
-                        <span class="tech-tag">IPG CarMaker</span>
-                        <span class="tech-tag">Euro NCAP</span>
-                        <span class="tech-tag">Control Systems</span>
-                    </div>
+            <div class="project-card">
+                <h3>ACC Controller Design & Validation</h3>
+                <p>Designed and validated Euro NCAP-compliant Adaptive Cruise Control (ACC) controller for capstone project. Developed control logic in MATLAB/Simulink and performed comprehensive validation testing in IPG CarMaker simulation environment.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">MATLAB/Simulink</span>
+                    <span class="tech-tag">IPG CarMaker</span>
+                    <span class="tech-tag">Euro NCAP</span>
+                    <span class="tech-tag">Control Systems</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <div>
-            <h2>Technical Skills</h2>
-            <p class="section-subtitle">Engineering Tools & Expertise</p>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>💻 Programming & AI</h3>
-                    <ul>
-                        <li>Python (Advanced)</li>
-                        <li>C/C++</li>
-                        <li>MATLAB/Simulink</li>
-                        <li>Computer Vision (OpenCV, MediaPipe)</li>
-                        <li>Deep Learning (YOLO, VLM)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🚗 Automotive Platforms</h3>
-                    <ul>
-                        <li>CARLA Simulator</li>
-                        <li>IPG CarMaker</li>
-                        <li>Eclipse KUKSA & Zenoh</li>
-                        <li>ADAS Development</li>
-                        <li>Euro NCAP Standards</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🔧 Embedded Systems</h3>
-                    <ul>
-                        <li>NVIDIA Jetson (Orin Nano)</li>
-                        <li>Edge AI Deployment</li>
-                        <li>Real-time Processing</li>
-                        <li>Sensor Integration</li>
-                        <li>Hardware Optimization</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🧪 Control & Simulation</h3>
-                    <ul>
-                        <li>Vehicle Control Systems</li>
-                        <li>ACC/ADAS Controller Design</li>
-                        <li>Model-Based Development</li>
-                        <li>HIL/SIL Testing</li>
-                        <li>System Validation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">Engineering Tools & Expertise</p>
+        
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category">Programming</td>
+                    <td>Python, C/C++, Qt/QML, MATLAB/Simulink</td>
+                </tr>
+                <tr>
+                    <td class="category">AI & Computer Vision</td>
+                    <td>YOLO, MediaPipe, SmolVLM, OpenCV, Deep Learning, Edge AI Deployment</td>
+                </tr>
+                <tr>
+                    <td class="category">Automotive Platforms</td>
+                    <td>CARLA Simulator, IPG CarMaker, Eclipse KUKSA, Zenoh, VSS (Vehicle Signal Specification)</td>
+                </tr>
+                <tr>
+                    <td class="category">Embedded Systems</td>
+                    <td>NVIDIA Jetson Orin Nano, Raspberry Pi, CAN Communication, Real-time Processing</td>
+                </tr>
+                <tr>
+                    <td class="category">SDV Technologies</td>
+                    <td>Software-Defined Vehicles, Vehicle Data Acquisition, HMI Visualization, Sensor Integration</td>
+                </tr>
+                <tr>
+                    <td class="category">Requirements Engineering</td>
+                    <td>IBM DOORS, Jira, RTM (Requirements Traceability Matrix), Change Control, Stakeholder Coordination</td>
+                </tr>
+                <tr>
+                    <td class="category">Control Systems</td>
+                    <td>ADAS Controller Design, ACC Systems, Euro NCAP Standards, HIL/SIL Testing, Model-Based Development</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="contact">
-        <div>
-            <h2>Contact</h2>
-            <p class="section-subtitle">Let's Connect</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-item-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="mailto:429jin@gmail.com">429jin@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-item-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/kiiznii/" target="_blank">linkedin.com/in/kiiznii</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-item-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/kiiznii" target="_blank">github.com/kiiznii</a>
-                </div>
+        <h2>Contact</h2>
+        <p class="section-subtitle">Let's Connect</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <a href="mailto:429jin@gmail.com">429jin@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/kiiznii/" target="_blank">linkedin.com/in/kiiznii</a>
+            </div>
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <a href="https://github.com/kiiznii" target="_blank">github.com/kiiznii</a>
             </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2026 Kijin Baek. All rights reserved.</p>
-        <p>Clean design for professional presentation</p>
     </footer>
 </body>
 </html>
