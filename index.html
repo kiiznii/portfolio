@@ -32,7 +32,7 @@
         
         nav {
             background: #ffffff;
-            padding: 1.2rem 0;
+            padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -64,40 +64,35 @@
         }
         
         section {
-            padding: 80px 40px;
+            padding: 50px 40px;
             max-width: 1100px;
             margin: 0 auto;
         }
         
         .hero {
-            min-height: 40vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
             background: #ffffff;
-            padding-top: 120px;
+            padding: 120px 40px 40px;
         }
         
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
+            font-size: 2.8rem;
+            margin-bottom: 0.3rem;
             color: var(--primary);
             font-weight: 700;
         }
         
         .hero .title {
             color: var(--accent);
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         
         h2 {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
             color: var(--primary);
             font-weight: 700;
             text-transform: uppercase;
@@ -107,31 +102,23 @@
             padding-bottom: 0.3rem;
         }
         
-        .section-subtitle {
-            color: #666;
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
-        }
-        
         #about {
             background: var(--light-gray);
-            padding-top: 100px;
+            padding-top: 50px;
         }
         
-        .about-header {
-            display: flex;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            align-items: center;
+        .about-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2.5rem;
+            align-items: start;
         }
         
         .about-img {
-            width: 220px;
-            height: 220px;
-            border-radius: 8px;
+            width: 200px;
+            height: 200px;
+            border-radius: 6px;
             overflow: hidden;
-            flex-shrink: 0;
             border: 3px solid #fff;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
@@ -142,78 +129,64 @@
             object-fit: cover;
         }
         
-        .about-title {
-            flex: 1;
-        }
-        
-        .about-title h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        .about-info h3 {
+            font-size: 1.1rem;
             color: var(--primary);
-            font-weight: 700;
-        }
-        
-        .about-title .role {
-            font-size: 1.3rem;
-            color: var(--accent);
             font-weight: 600;
             margin-bottom: 1rem;
         }
         
         .career-statement {
             background: #ffffff;
-            padding: 2rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--accent);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            line-height: 1.8;
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            line-height: 1.7;
             color: #555;
-            font-size: 0.98rem;
-            margin-bottom: 2rem;
+            font-size: 0.92rem;
+            margin-bottom: 1.5rem;
         }
         
         .expertise {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
+            gap: 0.8rem;
         }
         
         .expertise-item {
             background: #ffffff;
-            padding: 1rem;
+            padding: 0.7rem;
             border-radius: 4px;
             border-left: 3px solid var(--accent);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
             text-align: center;
         }
         
-        .experience-list {
-            margin-top: 2rem;
-        }
-        
         .experience-item {
             background: #ffffff;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border-left: 4px solid var(--accent);
-            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border-left: 3px solid var(--accent);
+            margin-bottom: 1rem;
         }
         
         .experience-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
         
         .experience-header h3 {
             color: var(--primary);
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 600;
+            margin: 0;
         }
         
         .experience-meta {
@@ -223,33 +196,33 @@
         .experience-company {
             color: var(--accent);
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
         
         .experience-location {
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .experience-date {
             color: #666;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-style: italic;
         }
         
         .experience-item ul {
             list-style: none;
             padding: 0;
-            margin-top: 1rem;
+            margin-top: 0.8rem;
         }
         
         .experience-item li {
-            margin-bottom: 0.6rem;
-            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
             position: relative;
             color: #555;
-            line-height: 1.7;
-            font-size: 0.95rem;
+            line-height: 1.6;
+            font-size: 0.9rem;
         }
         
         .experience-item li:before {
@@ -263,50 +236,50 @@
         .projects-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.8rem;
-            margin-top: 2rem;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
         
         .project-card {
             background: #ffffff;
             border-radius: 6px;
-            padding: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border-left: 3px solid var(--accent);
             transition: all 0.3s;
         }
         
         .project-card:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             transform: translateY(-2px);
         }
         
         .project-card h3 {
             color: var(--primary);
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.6rem;
         }
         
         .project-card p {
             color: #555;
-            line-height: 1.8;
-            margin-bottom: 1.2rem;
-            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
         }
         
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
         
         .tech-tag {
             background: var(--light-gray);
             color: var(--text);
-            padding: 0.3rem 0.8rem;
+            padding: 0.3rem 0.7rem;
             border-radius: 3px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             border: 1px solid var(--border);
             font-weight: 500;
         }
@@ -318,9 +291,9 @@
         .skills-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             background: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
             border-radius: 6px;
             overflow: hidden;
         }
@@ -328,20 +301,21 @@
         .skills-table th {
             background: var(--primary);
             color: white;
-            padding: 1rem 1.5rem;
+            padding: 0.9rem 1.2rem;
             text-align: left;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         
         .skills-table td {
-            padding: 1.2rem 1.5rem;
+            padding: 1rem 1.2rem;
             border-bottom: 1px solid var(--border);
             color: #555;
-            font-size: 0.92rem;
+            font-size: 0.88rem;
             vertical-align: top;
+            line-height: 1.6;
         }
         
         .skills-table tr:last-child td {
@@ -355,35 +329,35 @@
         .skills-table .category {
             font-weight: 600;
             color: var(--primary);
-            width: 25%;
+            width: 22%;
         }
         
         .contact-info {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 2rem;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
         }
         
         .contact-item {
             background: #ffffff;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 6px;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
             transition: all 0.3s;
             border-top: 3px solid var(--accent);
         }
         
         .contact-item:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             transform: translateY(-2px);
         }
         
         .contact-item h3 {
             color: var(--primary);
-            margin-bottom: 0.8rem;
-            font-size: 1.1rem;
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
             font-weight: 600;
         }
         
@@ -391,7 +365,7 @@
             color: var(--accent);
             text-decoration: none;
             transition: color 0.3s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         
         .contact-item a:hover {
@@ -403,13 +377,13 @@
             background: var(--light-gray);
             color: var(--text);
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
             border-top: 1px solid var(--border);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         footer p {
-            margin: 0.3rem 0;
+            margin: 0.2rem 0;
             color: #666;
         }
         
@@ -421,25 +395,20 @@
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             h2 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
             
-            .about-header {
-                flex-direction: column;
+            .about-content {
+                grid-template-columns: 1fr;
                 text-align: center;
             }
             
             .about-img {
-                width: 180px;
-                height: 180px;
-            }
-            
-            .about-title h1 {
-                font-size: 2rem;
+                margin: 0 auto;
             }
             
             .expertise {
@@ -460,8 +429,8 @@
             
             .skills-table th,
             .skills-table td {
-                padding: 0.8rem 1rem;
-                font-size: 0.85rem;
+                padding: 0.7rem 0.9rem;
+                font-size: 0.82rem;
             }
             
             nav ul {
@@ -470,7 +439,7 @@
             }
             
             section {
-                padding: 60px 20px;
+                padding: 40px 20px;
             }
         }
     </style>
@@ -492,56 +461,52 @@
     </section>
 
     <section id="about">
-        <div class="about-header">
+        <h2>About Me</h2>
+        
+        <div class="about-content">
             <div class="about-img">
                 <img src="profile.jpg" alt="Kijin Baek">
             </div>
-            <div class="about-title">
-                <h1>About Me</h1>
-                <div class="role">Automotive Engineer</div>
+            
+            <div class="about-info">
+                <h3>Career Statement</h3>
+                <div class="career-statement">
+                    Automotive engineer with experience in Software-Defined Vehicles (SDV), embedded systems, and driver monitoring systems. Developed embedded applications integrating Raspberry Pi, CAN communication, Python, C++, and Qt/QML for real-time vehicle data acquisition, processing, and HMI visualization. Built perception and driver state monitoring pipelines using computer vision and prototyped SDV applications with CARLA, Zenoh, Kuksa, and VSS during the official Eclipse SDV Hackathon. Completed an R&D internship at AUMOVIO, contributing to automotive requirement engineering through customer requirement management, engineering specification and revision control, and requirement traceability using enterprise engineering tools. Also completed SEA:ME @ 42 Wolfsburg, a Volkswagen Group mobility software program, collaborating with international teams to develop next-generation mobility software.
+                </div>
+                
+                <div class="expertise">
+                    <div class="expertise-item">Edge AI</div>
+                    <div class="expertise-item">ADAS</div>
+                    <div class="expertise-item">Embedded Systems</div>
+                    <div class="expertise-item">SDV</div>
+                </div>
             </div>
-        </div>
-        
-        <h2>Career Statement</h2>
-        <div class="career-statement">
-            Automotive engineer with experience in Software-Defined Vehicles (SDV), embedded systems, and driver monitoring systems. Developed embedded applications integrating Raspberry Pi, CAN communication, Python, C++, and Qt/QML for real-time vehicle data acquisition, processing, and HMI visualization. Built perception and driver state monitoring pipelines using computer vision and prototyped SDV applications with CARLA, Zenoh, Kuksa, and VSS during the official Eclipse SDV Hackathon. Completed an R&D internship at AUMOVIO, contributing to automotive requirement engineering through customer requirement management, engineering specification and revision control, and requirement traceability using enterprise engineering tools. Also completed SEA:ME @ 42 Wolfsburg, a Volkswagen Group mobility software program, collaborating with international teams to develop next-generation mobility software.
-        </div>
-        
-        <div class="expertise">
-            <div class="expertise-item">Edge AI & Computer Vision</div>
-            <div class="expertise-item">ADAS & Vehicle Control</div>
-            <div class="expertise-item">Embedded Systems</div>
-            <div class="expertise-item">Software-Defined Vehicles</div>
         </div>
     </section>
 
     <section id="experience">
         <h2>Work Experience</h2>
-        <p class="section-subtitle">Professional Background</p>
         
-        <div class="experience-list">
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3>Requirements Management Intern</h3>
-                        <div class="experience-company">Aumovio Electronics</div>
-                        <div class="experience-location">Sejong, South Korea</div>
-                    </div>
-                    <div class="experience-meta">
-                        <div class="experience-date">June 2026 - June 2027</div>
-                    </div>
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <h3>Requirements Management Intern</h3>
+                    <div class="experience-company">Aumovio Electronics</div>
+                    <div class="experience-location">Sejong, South Korea</div>
                 </div>
-                <ul>
-                    <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and RTM</li>
-                    <li>Tracked end-to-end status and coordinated stakeholders from scoping to release</li>
-                </ul>
+                <div class="experience-meta">
+                    <div class="experience-date">June 2026 - June 2027</div>
+                </div>
             </div>
+            <ul>
+                <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and RTM</li>
+                <li>Tracked end-to-end status and coordinated stakeholders from scoping to release</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <p class="section-subtitle">Key Engineering Achievements</p>
         
         <div class="projects-grid">
             <div class="project-card">
@@ -583,7 +548,6 @@
 
     <section id="skills">
         <h2>Technical Skills</h2>
-        <p class="section-subtitle">Engineering Tools & Expertise</p>
         
         <table class="skills-table">
             <thead>
@@ -603,7 +567,7 @@
                 </tr>
                 <tr>
                     <td class="category">Automotive Platforms</td>
-                    <td>CARLA Simulator, IPG CarMaker, Eclipse KUKSA, Zenoh, VSS (Vehicle Signal Specification)</td>
+                    <td>CARLA Simulator, IPG CarMaker, Eclipse KUKSA, Zenoh, VSS</td>
                 </tr>
                 <tr>
                     <td class="category">Embedded Systems</td>
@@ -615,11 +579,11 @@
                 </tr>
                 <tr>
                     <td class="category">Requirements Engineering</td>
-                    <td>IBM DOORS, Jira, RTM (Requirements Traceability Matrix), Change Control, Stakeholder Coordination</td>
+                    <td>IBM DOORS, Jira, RTM, Change Control, Stakeholder Coordination</td>
                 </tr>
                 <tr>
                     <td class="category">Control Systems</td>
-                    <td>ADAS Controller Design, ACC Systems, Euro NCAP Standards, HIL/SIL Testing, Model-Based Development</td>
+                    <td>ADAS Controller Design, ACC Systems, Euro NCAP Standards, HIL/SIL Testing</td>
                 </tr>
             </tbody>
         </table>
@@ -627,7 +591,6 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p class="section-subtitle">Let's Connect</p>
         
         <div class="contact-info">
             <div class="contact-item">
