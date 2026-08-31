@@ -106,7 +106,8 @@
             color: #333;
             text-align: justify;
         }
-        
+
+        /* ── Experience ── */
         .experience-item {
             margin-bottom: 30px;
         }
@@ -118,13 +119,17 @@
         .experience-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
+            align-items: flex-start;
+            margin-bottom: 10px;
         }
         
         .experience-header h3 {
             font-size: 1.05rem;
             font-weight: 700;
+        }
+
+        .experience-right {
+            text-align: right;
         }
         
         .experience-company {
@@ -132,13 +137,12 @@
             font-weight: 600;
             font-style: italic;
         }
-        
-        .experience-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
+
+        .experience-date,
+        .experience-location {
+            font-size: 0.88rem;
             color: #555;
-            margin-bottom: 10px;
+            line-height: 1.6;
         }
         
         .experience-item ul {
@@ -154,7 +158,7 @@
             color: #333;
         }
 
-        /* Education */
+        /* ── Education ── */
         .education-item {
             margin-bottom: 30px;
         }
@@ -166,13 +170,17 @@
         .education-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
+            align-items: flex-start;
+            margin-bottom: 8px;
         }
 
         .education-header h3 {
             font-size: 1.05rem;
             font-weight: 700;
+        }
+
+        .education-right {
+            text-align: right;
         }
 
         .education-school {
@@ -181,12 +189,11 @@
             font-style: italic;
         }
 
-        .education-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
+        .education-date,
+        .education-location {
+            font-size: 0.88rem;
             color: #555;
-            margin-bottom: 8px;
+            line-height: 1.6;
         }
 
         .education-detail {
@@ -203,7 +210,8 @@
             margin-top: 6px;
             max-width: 75%;
         }
-        
+
+        /* ── Projects ── */
         .project-item {
             margin-bottom: 25px;
         }
@@ -236,7 +244,8 @@
             font-weight: 600;
             color: #1a1a1a;
         }
-        
+
+        /* ── Skills ── */
         .skills-grid {
             display: grid;
             grid-template-columns: 250px 1fr;
@@ -263,44 +272,16 @@
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 40px 20px;
-            }
-            
-            .header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .header-right {
-                text-align: left;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            
-            .about-img {
-                width: 150px;
-                height: 200px;
-                margin: 0 auto;
-            }
-            
+            body { padding: 40px 20px; }
+            .header { flex-direction: column; gap: 15px; }
+            .header-right { text-align: left; }
+            .about-content { grid-template-columns: 1fr; gap: 20px; }
+            .about-img { width: 150px; height: 200px; margin: 0 auto; }
             .experience-header,
-            .education-header {
-                flex-direction: column;
-            }
-            
-            .experience-meta,
-            .education-meta {
-                flex-direction: column;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-                gap: 8px;
-            }
+            .education-header { flex-direction: column; }
+            .experience-right,
+            .education-right { text-align: left; margin-top: 4px; }
+            .skills-grid { grid-template-columns: 1fr; gap: 8px; }
         }
     </style>
 </head>
@@ -311,9 +292,9 @@
             <div class="title">Automotive Engineer</div>
         </div>
         <div class="header-right">
-            ✉️<a href="mailto:429jin@gmail.com">429jin@gmail.com</a><br>
-            🌐<a href="https://www.linkedin.com/in/kiiznii/" target="_blank">linkedin.com/in/kiiznii</a><br>
-            💻<a href="https://github.com/kiiznii" target="_blank">github.com/kiiznii</a>
+            ✉️ <a href="mailto:429jin@gmail.com">429jin@gmail.com</a><br>
+            🌐 <a href="https://www.linkedin.com/in/kiiznii/" target="_blank">linkedin.com/in/kiiznii</a><br>
+            💻 <a href="https://github.com/kiiznii" target="_blank">github.com/kiiznii</a>
         </div>
     </header>
 
@@ -337,14 +318,14 @@
         <div class="experience-item">
             <div class="experience-header">
                 <h3>Requirements Management Intern</h3>
-                <div class="experience-company">Aumovio Electronics</div>
-            </div>
-            <div class="experience-meta">
-                <span>June 2026 – June 2027</span>
-                <span>Sejong, South Korea</span>
+                <div class="experience-right">
+                    <div class="experience-company">Aumovio Electronics</div>
+                    <div class="experience-date">June 2026 – Dec 2026</div>
+                    <div class="experience-location">Sejong, South Korea</div>
+                </div>
             </div>
             <ul>
-                <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and RTM.</li>
+                <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and Traceability management.</li>
                 <li>Tracked end-to-end status and coordinated stakeholders from scoping to release.</li>
             </ul>
         </div>
@@ -352,11 +333,11 @@
         <div class="experience-item">
             <div class="experience-header">
                 <h3>Republic of Korea Marine Corps Sergeant</h3>
-                <div class="experience-company">ROKMC</div>
-            </div>
-            <div class="experience-meta">
-                <span>Oct 2019 – May 2021</span>
-                <span>Pohang, South Korea</span>
+                <div class="experience-right">
+                    <div class="experience-company">ROKMC</div>
+                    <div class="experience-date">Oct 2019 – May 2021</div>
+                    <div class="experience-location">Pohang, South Korea</div>
+                </div>
             </div>
             <ul>
                 <li>Squad Leader during compulsory service.</li>
@@ -365,18 +346,17 @@
         </div>
     </section>
 
-    <!-- ✅ Education Section -->
     <section id="education">
         <h2>Education</h2>
 
         <div class="education-item">
             <div class="education-header">
                 <h3>Bachelor of Automotive Engineering</h3>
-                <div class="education-school">Kookmin University</div>
-            </div>
-            <div class="education-meta">
-                <span>Feb 2019 – Aug 2027</span>
-                <span>Seoul, South Korea</span>
+                <div class="education-right">
+                    <div class="education-school">Kookmin University</div>
+                    <div class="education-date">Feb 2019 – Aug 2027</div>
+                    <div class="education-location">Seoul, South Korea</div>
+                </div>
             </div>
             <div class="education-detail">
                 GPA: 3.35 / 4.5 &nbsp;·&nbsp; Minor: Future Automotive Engineering
@@ -386,11 +366,11 @@
         <div class="education-item">
             <div class="education-header">
                 <h3>Volkswagen SEA:ME Program</h3>
-                <div class="education-school">42 Wolfsburg</div>
-            </div>
-            <div class="education-meta">
-                <span>Jul 2025 – Jun 2026</span>
-                <span>Wolfsburg, Germany</span>
+                <div class="education-right">
+                    <div class="education-school">42 Wolfsburg</div>
+                    <div class="education-date">Jul 2025 – Jun 2026</div>
+                    <div class="education-location">Wolfsburg, Germany</div>
+                </div>
             </div>
             <div class="education-desc">
                 Master's-level mobility software program by 42 Wolfsburg in partnership with Volkswagen, CARIAD, Microsoft, and Bosch; specialized in distributed embedded systems, autonomous driving, and mobility cybersecurity.
