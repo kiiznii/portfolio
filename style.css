@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #ffffff;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 50px;
+}
+
+.header-left h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.header-left .title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #555;
+    font-style: italic;
+}
+
+.header-right {
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.header-right a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+
+.header-right a:hover {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+section {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 50px;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.about-img {
+    width: 180px;
+    height: 240px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.career-statement {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* ── Experience ── */
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.experience-header h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding-top: 2px;
+}
+
+.experience-right {
+    text-align: right;
+}
+
+.experience-company {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.experience-date,
+.experience-location {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.2;
+}
+
+.experience-item ul {
+    list-style-position: outside;
+    margin-left: 20px;
+    max-width: 75%;
+    margin-top: 3px;
+}
+
+.experience-item li {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* ── Education ── */
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.education-header h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding-top: 2px;
+}
+
+.education-right {
+    text-align: right;
+}
+
+.education-school {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.education-date,
+.education-location {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.2;
+}
+
+.education-detail {
+    font-size: 0.92rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+.education-desc {
+    font-size: 0.92rem;
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+    margin-top: 6px;
+    max-width: 75%;
+}
+
+/* ── Projects ── */
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-item h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-item p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.project-tech {
+    font-size: 0.88rem;
+    color: #555;
+    font-style: italic;
+}
+
+.project-tech strong {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* ── Skills ── */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 15px 30px;
+    row-gap: 15px;
+}
+
+.skill-category {
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.skill-list {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    body { padding: 40px 20px; }
+    .header { flex-direction: column; gap: 15px; }
+    .header-right { text-align: left; }
+    .about-content { grid-template-columns: 1fr; gap: 20px; }
+    .about-img { width: 150px; height: 200px; margin: 0 auto; }
+    .experience-header,
+    .education-header { flex-direction: column; align-items: flex-start; }
+    .experience-right,
+    .education-right { text-align: left; margin-top: 4px; }
+    .skills-grid { grid-template-columns: 1fr; gap: 8px; }
+}
