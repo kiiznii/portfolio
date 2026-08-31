@@ -38,7 +38,7 @@ const data = {
             school: "Kookmin University",
             date: "Feb 2019 – Aug 2027",
             location: "Seoul, South Korea",
-            detail: "GPA: 3.35 / 4.5 &nbsp;·&nbsp; Minor: Future Automotive Engineering"
+            detail: "GPA: 3.35 / 4.5<br>; Minor: Future Automotive Engineering"
         },
         {
             title: "Volkswagen SEA:ME Program",
