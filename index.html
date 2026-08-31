@@ -152,6 +152,55 @@
             margin-bottom: 5px;
             color: #333;
         }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 30px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .education-header h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .education-school {
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .education-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .education-detail {
+            font-size: 0.92rem;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .education-desc {
+            font-size: 0.92rem;
+            color: #333;
+            line-height: 1.7;
+            text-align: justify;
+            margin-top: 6px;
+        }
         
         .project-item {
             margin-bottom: 25px;
@@ -236,11 +285,13 @@
                 margin: 0 auto;
             }
             
-            .experience-header {
+            .experience-header,
+            .education-header {
                 flex-direction: column;
             }
             
-            .experience-meta {
+            .experience-meta,
+            .education-meta {
                 flex-direction: column;
             }
             
@@ -287,26 +338,61 @@
                 <div class="experience-company">Aumovio Electronics</div>
             </div>
             <div class="experience-meta">
-                <span>June 2026 - June 2027</span>
+                <span>June 2026 – June 2027</span>
                 <span>Sejong, South Korea</span>
             </div>
             <ul>
                 <li>Managed and distributed Hyundai/Kia Motors requirements in IBM DOORS and Jira, maintaining change control and RTM.</li>
                 <li>Tracked end-to-end status and coordinated stakeholders from scoping to release.</li>
             </ul>
+        </div>
+
         <div class="experience-item">
             <div class="experience-header">
                 <h3>Republic of Korea Marine Corps Sergeant</h3>
                 <div class="experience-company">ROKMC</div>
             </div>
             <div class="experience-meta">
-                <span>Oct 2019 - May 2021</span>
+                <span>Oct 2019 – May 2021</span>
                 <span>Pohang, South Korea</span>
             </div>
             <ul>
-                <li>Squad Leader during compulsory service</li>
+                <li>Squad Leader during compulsory service.</li>
                 <li>Completed ROK Marine Corps Ranger Course.</li>
             </ul>
+        </div>
+    </section>
+
+    <!-- ✅ Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <div class="education-header">
+                <h3>Bachelor of Automotive Engineering</h3>
+                <div class="education-school">Kookmin University</div>
+            </div>
+            <div class="education-meta">
+                <span>Feb 2019 – Aug 2027</span>
+                <span>Seoul, South Korea</span>
+            </div>
+            <div class="education-detail">
+                GPA: 3.35 / 4.5 &nbsp;·&nbsp; Minor: Future Automotive Engineering
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <h3>Volkswagen SEA:ME Program</h3>
+                <div class="education-school">42 Wolfsburg</div>
+            </div>
+            <div class="education-meta">
+                <span>Jul 2025 – Jun 2026</span>
+                <span>Wolfsburg, Germany</span>
+            </div>
+            <div class="education-desc">
+                Master's-level mobility software program by 42 Wolfsburg in partnership with Volkswagen, CARIAD, Microsoft, and Bosch; specialized in distributed embedded systems, autonomous driving, and mobility cybersecurity.
+            </div>
         </div>
     </section>
 
